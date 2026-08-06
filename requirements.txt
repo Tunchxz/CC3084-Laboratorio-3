@@ -1,0 +1,39 @@
+# Laboratorio 3 - Reconocimiento de Lenguaje de Senas (ASL)
+#
+# Nota importante sobre el entorno:
+# Este proyecto corre sobre Python 3.14, para el cual TensorFlow todavia no
+# publica wheels. Por eso se usa Keras 3 con backend de PyTorch: la API de
+# Keras (Sequential, Conv2D, fit, EarlyStopping) es identica a la vista en
+# clase, pero los tensores los maneja torch. El indice extra apunta a la
+# variante CPU de torch para no descargar las librerias de CUDA (la maquina
+# no tiene GPU).
+#
+# Instalacion:
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Deep learning
+keras==3.15.1
+torch==2.13.0+cpu
+
+# Cientificas
+numpy==2.5.1
+pandas==3.0.5
+matplotlib==3.11.1
+scikit-learn==1.9.0
+
+# Procesamiento de imagenes
+pillow==12.3.0
+opencv-python-headless==5.0.0.93
+
+# Descarga de datos y utilidades
+kagglehub==1.0.2
+tqdm==4.70.0
+
+# Notebooks
+jupyterlab==4.5.2
+ipykernel==7.1.0
+nbformat==5.10.4
+nbconvert==7.16.6

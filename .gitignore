@@ -1,0 +1,21 @@
+# AI
+.agents
+.claude
+skills-lock.json
+
+# Referencias del laboratorio (no se versionan)
+temp/
+
+# Entorno virtual
+.venv/
+__pycache__/
+*.pyc
+
+# Datos: data/raw es la fuente cruda descargada de Kaggle (~1 GB) y
+# data/processed se regenera con src/preprocess.py
+data/raw/
+data/raw_test_oficial/
+data/processed/
+
+# Jupyter
+.ipynb_checkpoints/
